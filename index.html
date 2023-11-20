@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/content.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_API&callback=inicializarMapa" async defer></script>
+    <script src="ruta/a/tu/mapa.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zucca Cepillos</title>
@@ -40,20 +40,33 @@
             <img src="./images/cep_tres.png" alt="">
             <img src="./images/cep_cua.png" alt="">
         </div>
-        <div>
-            <ul>
-                <h3>Contacto</h3>
-                <li><img src="" alt="">Email: zuccacepillos1926@gmailcom</li>
-                <li><img src="" alt="">Telefono: 4222139</li>
-                <li><img src="" alt="">Whatsapp: 341 311-2700</li>
-            </ul>
+        <div class="Contacto">
+            <h3>Contacto</h3>
+            <div class="Cont">
+                <div class="lista">
+                    <ul>
+                        <li><p class="cont">Medios:</p></li>
+                        <li class="cont"><img src="" alt="">Email: zuccacepillos1926@gmailcom</li>
+                        <li class="cont"><img src="" alt="">Telefono: 4222139</li>
+                        <li class="cont"><img src="" alt="">Whatsapp: 341 311-2700</li>
+                        <li><p class="cont">Enviar:</p></li>
+                        <li><p class="cont">Datos de la empresa, correos, telefonos, N° CUIT y plano o croquis con detalles del cepillo a cotizar, como indica en la referencia.</p></li>
+                    </ul>
+                </div>
+            <div>
+                <img src="./images/guia.jpeg" alt="">
+            </div>
+            </div>
         </div>
         <div>
+            <h3>¿Donde estamos?</h3>
             <ul>
-                <h3>¿Donde estamos?</h3>
                 <li><img src="" alt="">Direccion: Huerta Grande 1435 - Rosario, Santa Fe, Arg.</li>
                 <li><a href="https://www.google.com/maps/place/Cepillos+Industriales+%2F+Frigor%C3%ADficos+%2F+Agropecuarios+%2F+Para+Industria+Alimentaria+%22Zucca+Cepillos%22/@-32.8838162,-60.7029302,15z/data=!4m6!3m5!1s0x95b7ab517c5ac79d:0xb577793b395a2e4d!8m2!3d-32.8838162!4d-60.7029302!16s%2Fg%2F11fnwgvqlq?entry=ttu" target="_blank">Ver en Google Maps</a></li>
+                <li><p>Horario: 08:30 a 12:30</p></li>
+                <li><p>Sin atención al público, sólo con cita previa.</p></li>
             </ul>
+            <div id="mapa"></div>
         </div>
     </main>
 </body>

@@ -1,0 +1,142 @@
+
+/*BODY*/
+body{
+    width: 100vp;
+    background-color: black;
+    padding: 5px;
+}
+main h2, main h3{
+    color: #fff;
+    font-size: xx-large;
+    padding: 10px;
+}
+main p{
+    color: #fff;
+    font-size: medium;
+}
+
+/*ENCABEZADO*/
+header{
+    width: 100%;
+    /*background-image: url('../images/encabezado.png'); /* Ruta relativa desde el archivo CSS al directorio de la imagen */
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.774)), url('../images/encabezado.png');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:#c4dafa;
+    height: 230px;
+}
+.top{
+    height: 200px;
+}
+.tabs{
+    width: 100%;
+}
+.tabs ul{
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    color: white;
+    background-color: transparent;
+    border-style: none;
+    border-bottom: #c4dafa;
+    padding: 5px 5px;
+}
+
+/*MAIN*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main > div {
+    width: 75%;
+    background-color: #202020;
+    border-radius: 10px;
+    margin: 25px; /* Espaciado entre las tarjetas */
+    padding: 15px; /* Espaciado interno */
+}
+main img {
+    max-width: 100%; /* Ajusta el tamaño máximo de las imágenes al 100% del contenedor padre */
+}
+main ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+}
+main li {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: medium;
+    text-align: justify;    
+}
+main li img {
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+main a {
+    color: #fff; /* Cambia el color del enlace (puedes ajustarlo según tus preferencias) */
+}
+
+/*NOSOTROS*/
+.Nosotros {
+    display: flex;
+    flex-direction: column; /* Apila los elementos en columna */
+}
+.Nosotros img {
+    max-width: 40%; /* Ajusta el tamaño máximo de la imagen al 100% del contenedor */
+    margin-right: 15px; /* Espacio entre la imagen y el párrafo (ajusta según sea necesario) */
+}
+.Nosotros div{
+    display: flex;
+}
+.Nosotros p {
+    text-align: justify;
+    font-size: x-large;
+}
+
+/*MUESTRAS*/
+.Muestras {
+    text-align: justify;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+.Muestras:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+.Muestras img {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+    display: inline-block;
+    margin: 25px;
+}
+
+/*CONTACTO*/
+.Contacto{
+    justify-items: center ;
+}
+.Cont {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr; /* Divide en dos columnas de igual tamaño */
+    text-align: center; /* Alinea el texto a la izquierda */
+    
+}
+.lista {
+    list-style: none;
+    padding-left: 10px;
+}
+.lista li {
+    margin-bottom: 10px;
+}
+.Contacto img {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+    max-width: 250px;
+    height: auto;
+}
+.cont{
+    text-align: justify;
+    font-size: x-large;
+    justify-content: center;
+}

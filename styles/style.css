@@ -18,31 +18,42 @@ main p{
 /*ENCABEZADO*/
 header{
     width: 100%;
-    /*background-image: url('../images/encabezado.png'); /* Ruta relativa desde el archivo CSS al directorio de la imagen */
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.774)), url('../images/encabezado.png');
+    background-image: url('../images/encabezado.png');
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.774)), url('../images/encabezado.png');*/
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color:#c4dafa;
+    background-color:#202020;
     height: 230px;
 }
 .top{
     height: 200px;
+    display: flex;
+    justify-content: center;
+}
+#logo{
+    width: auto;
+    height: 80%;
+    padding: 20px;
 }
 .tabs{
     width: 100%;
+    background-color: #202020;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .tabs ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-button{
+.tabs ul a{
     color: white;
-    background-color: transparent;
-    border-style: none;
-    border-bottom: #c4dafa;
-    padding: 5px 5px;
+    text-decoration: none;
+    margin: 0px 80px
 }
+
 
 /*MAIN*/
 main {
@@ -139,4 +150,23 @@ main a {
     text-align: justify;
     font-size: x-large;
     justify-content: center;
+}
+
+/*UBICACION*/
+.Ubicacion{
+}
+.Ubicacion ul{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr; /* Divide en dos columnas de igual tamaño */
+    text-align: center; /* Alinea el texto a la izquierda */
+    margin: 20px;
+}
+.Ubicacion ul div li{
+    margin-bottom: 10px;
+}
+
+/*ICONOS*/
+.icono{
+    height: 30px;
+    width: 30px;
 }

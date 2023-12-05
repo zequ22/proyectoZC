@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./scripts/mapa.js">
-    <script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_API&callback=inicializarMapa" async defer></script>
-    <script src="ruta/a/tu/mapa.js"></script>
+    <link rel="stylesheet" href="./styles/stylemb.css">
+    <link rel="stylesheet" href="./styles/stylepc.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zucca Cepillos</title>
@@ -13,7 +11,7 @@
 <body>
     <header>
         <nav class="top">
-            <img id="logo" src="./images/logozcnegro.png" alt="">
+            <img id="logo" src="./images/logozcazul.png" alt="">
         </nav>
         <nav class="tabs">
             <ul>
@@ -26,52 +24,54 @@
     </header>
     <main>
         <div class="Nosotros" id="Nosotros">
-            <h2>Cepillos Industriales, Frigorificos, Agropecuarios y para la industria Alimentaria</h2>
+            <h1>Cepillos Industriales, Frigorificos, Agropecuarios y para la industria Alimentaria</h1>
             <div>
-                <img src="./images/1926.jpeg" alt="">
+                <img src="./images/1926.jpeg" alt="" id="foto1926">
                 <p>Zucca Cepillos es una empresa con una trayectoria que se remonta a su fundación en 1926, comprometida con el servicio a la industria. Estamos ubicados en la ciudad de Rosario, provincia de Santa Fe, Argentina, y nos especializamos en la fabricación y venta de cepillos industriales.<br>
                     En Zucca Cepillos, operamos siguiendo sólidos principios de responsabilidad y cumplimiento, garantizando a cada cliente un producto que satisfaga sus necesidades y expectativas. Nuestra dedicación a la calidad nos ha valido el reconocimiento entre las principales industrias.</p>
             </div>
-            </div>
+        </div>
         <div class="Muestras" id="Muestras">
-            <h3>Muestras</h3>
+            <h2>Muestras</h2>
+            <div class="cuadricula">
             <img src="./images/cep_uno.png" alt="">
             <img src="./images/cep_dos.png" alt="">
             <img src="./images/cep_tres.png" alt="">
             <img src="./images/cep_cua.png" alt="">
+            </div>
         </div>
         <div class="Contacto" id="Contacto">
-            <h3>Contacto</h3>
+            <h2>Contacto</h2>
             <div class="Cont">
                 <div class="lista">
                     <ul>
-                        <li><p class="cont">Medios:</p></li>
+                        <li><p class="cont" id="med">Medios:</p></li>
                         <li class="cont"><img src="./images/1490129331-rounded07_82197.png" alt="" class="icono">Email: zuccacepillos1926@gmailcom</li>
                         <li class="cont"><img src="./images/phone-symbol-of-an-auricular-inside-a-circle_icon-icons.com_56478.png" alt="" class="icono">Telefono: 4222139</li>
                         <li class="cont"><img src="./images/whatsapp_black_logo_icon_147050.png" alt="" class="icono">Whatsapp: 341 311-2700</li>
-                        <li><p class="cont">Enviar:</p></li>
+                        <li><p class="cont" id="env">Enviar:</p></li>
                         <li><p class="cont">Datos de la empresa, correos, telefonos, N° CUIT y plano o croquis con detalles del cepillo a cotizar, como indica en la referencia.</p></li>
                     </ul>
                 </div>
             <div>
-                <img src="./images/guia.jpeg" alt="">
+                <img class="guia" src="./images/guia.jpeg" alt="">
             </div>
             </div>
         </div>
         <div class="Ubicacion" id="Ubicacion">
-            <h3>¿Donde estamos?</h3>
-            <ul>
-                <div>
-                    <li><img src="./images/gps_navigation_pin_locate_location_icon-icons.com_59882.png" alt=""  class="icono"> Huerta Grande 1435 - Rosario, Santa Fe, Arg.</li>
-                    <li><a href="https://www.google.com/maps/place/Cepillos+Industriales+%2F+Frigor%C3%ADficos+%2F+Agropecuarios+%2F+Para+Industria+Alimentaria+%22Zucca+Cepillos%22/@-32.8838162,-60.7029302,15z/data=!4m6!3m5!1s0x95b7ab517c5ac79d:0xb577793b395a2e4d!8m2!3d-32.8838162!4d-60.7029302!16s%2Fg%2F11fnwgvqlq?entry=ttu" target="_blank">Ver en Google Maps</a></li>
-                </div>
-                <div>
-                    <li><p>Horario: 08:30 a 12:30</p></li>
-                    <li><p>Sin atención al público, sólo con cita previa.</p></li>
-                </div>
-            </ul>
-            <div id="mapa"></div>
+            <h2>¿Donde estamos?</h2>
+            <div class="contenedor">
+                    <img src="./images/gps_navigation_pin_locate_location_icon-icons.com_59882.png" alt=""  class="icono"> Huerta Grande 1435 - Rosario, Santa Fe, Arg.
+                    <a href="https://www.google.com/maps/place/Cepillos+Industriales+%2F+Frigor%C3%ADficos+%2F+Agropecuarios+%2F+Para+Industria+Alimentaria+%22Zucca+Cepillos%22/@-32.8838162,-60.7029302,15z/data=!4m6!3m5!1s0x95b7ab517c5ac79d:0xb577793b395a2e4d!8m2!3d-32.8838162!4d-60.7029302!16s%2Fg%2F11fnwgvqlq?entry=ttu" target="_blank">Ver en Google Maps</a>
+                    <p>Horario: 08:30 a 12:30</p>
+                    <p>Sin atención al público, sólo con cita previa.</p>
+            </div>
         </div>
     </main>
+    <footer>
+        <h2>
+            Zucca Cepillos desde 1926
+        </h2>
+    </footer>
 </body>
 </html>

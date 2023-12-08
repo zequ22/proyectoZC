@@ -178,20 +178,13 @@ main a {
 }
 
 .contenedor {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
-    gap: 10px; /* Espacio entre las columnas */
-    text-align: left; /* Alinea el texto a la izquierda */
-    margin: 10px;
-    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
 }
 
-.contenedor a {
-    text-decoration: none;
-    color: darkblue;
-}
-
-.contenedor div {
+.contenedor a{
     display: flex;
     flex-direction: column;
 }

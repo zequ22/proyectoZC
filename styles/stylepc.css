@@ -159,6 +159,15 @@ strong{
     body{
         width: 100vh;
     }
+    header{
+        height: 120px;
+    }
+    #logo{
+        padding-top: 10px;
+        width: 30%;
+        height: 90px;
+    }
+
     .titulo{
         text-align: center;
     }

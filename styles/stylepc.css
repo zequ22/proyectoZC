@@ -21,7 +21,7 @@ header{
 }
 #logo{
     padding-top: 10px;
-    width: 30%;
+    width: 25%;
     height: 145px;
 }
 .tabs{
@@ -72,7 +72,9 @@ main>div {
 }
 .Nosotros p{
     text-align: justify;
-    font-size: x-large;
+    font-size: 3.5vh; /* Ajusta la fuente al 5% del viewport height (puedes ajustar este valor según tus necesidades) */
+    flex-grow: 1;
+    height: 100%;
 }
 
 /*MUESTRAS*/
@@ -126,6 +128,7 @@ main>div {
     display: flex;
     padding: 10px;
     font-size: large;
+    justify-content: space-between;
 }
 
 /*FOOTER*/
@@ -185,6 +188,7 @@ strong{
     }
     .Contacto div ul li p{
         text-align: center;
+        font-size: large;
     }
     .guia{
         width: 60%;
